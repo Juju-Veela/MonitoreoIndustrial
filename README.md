@@ -22,7 +22,7 @@ Seguí estos pasos para instalar el entorno local y ejecutar el proyecto desde c
 * Instalalo en tu computadora siguiendo los pasos por defecto (usualmente se instala en C:\xampp).
 
 ---> Paso 2: Ubicar el proyecto
-* Copiá tu carpeta del proyecto (por ejemplo, monitoreo_iot) con todos sus archivos (index.html, style.css, script.js, procesar.php).
+* Copiá tu carpeta del proyecto (por ejemplo, monitoreoIndustrial) con todos sus archivos (index.html, style.css, script.js, procesar.php).
 * Pegala dentro de la ruta raíz del servidor local de XAMPP: C:\xampp\htdocs
 
 ---> Iniciar los servicios de XAMPP
@@ -45,4 +45,4 @@ CREATE TABLE IF NOT EXISTS lecturas ( id INT AUTO_INCREMENT PRIMARY KEY, sensor_
 * Hacé clic en la pestaña Examinar (Browse) en la parte superior para auditar las filas, los valores de temperatura y verificar qué registros tienen el bit alerta_disparada activo en "1".
 
 🏃 El momento de la Verdad: Cómo Ejecutarlo ⚠️ IMPORTANTE: No abras el archivo haciendo doble clic directo desde tus carpetas (file:///), ya que el navegador bloqueará la comunicación con el servidor por políticas de seguridad.
-Para ejecutarlo correctamente, abrí tu navegador e ingresá a la URL local: 👉 http://localhost/monitoreo_iot/index.html
+Para ejecutarlo correctamente, abrí tu navegador e ingresá a la URL local: 👉 http://localhost/monitoreoIndustrial/index.html
