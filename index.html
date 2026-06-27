@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Estacionamiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Control de Estacionamiento</h2>
+        
+        <!-- Formulario de Ingreso -->
+        <div class="card">
+            <h3>Registrar Ingreso</h3>
+            <form id="form-ingreso">
+                <div class="input-group">
+                    <label for="patente_ingreso">Patente / Dominio:</label>
+                    <input type="text" id="patente_ingreso" name="patente" placeholder="Eje: AA123BB o TTT123" required>
+                </div>
+                <button type="submit" class="btn-ingreso">Registrar Entrada</button>
+            </form>
+        </div>
+
+        <!-- Formulario de Egreso -->
+        <div class="card">
+            <h3>Registrar Egreso y Cobro</h3>
+            <form id="form-egreso">
+                <div class="input-group">
+                    <label for="patente_egreso">Patente / Dominio:</label>
+                    <input type="text" id="patente_egreso" name="patente" placeholder="Eje: AA123BB" required>
+                </div>
+                <button type="submit" class="btn-egreso">Calcular Tarifa y Salida</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenedor del aviso (Modal) -->
+    <div id="modal-container" class="modal-overlay hidden">
+        <div class="modal-content">
+            <p id="modal-mensaje"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
