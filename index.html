@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Monitoreo IoT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Industrial IoT Monitor</h2>
+        
+        <!-- Formulario Simulador de Sensor -->
+        <div class="card">
+            <h3>Simulador de Envío de Telemetría</h3>
+            <form id="form-sensor">
+                <div class="input-group">
+                    <label for="sensor_id">ID del Sensor:</label>
+                    <input type="text" id="sensor_id" name="sensor_id" value="SENSOR_TEMP_01" readonly required>
+                </div>
+                <div class="input-group">
+                    <label for="temperatura">Temperatura Registrada (°C):</label>
+                    <input type="number" id="temperatura" name="temperatura" step="0.1" placeholder="Ej: 25.5 o 42.1" required>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Lectura a Planta</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenedor del aviso (Modal) -->
+    <div id="modal-container" class="modal-overlay hidden">
+        <div class="modal-content" id="modal-content-box">
+            <p id="modal-mensaje"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
